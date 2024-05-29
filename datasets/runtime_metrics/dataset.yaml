@@ -1,0 +1,11 @@
+name: ewgenius.spiceapp1.runtime_metrics
+type: append
+migrations:
+  - name: create_table
+    sql: |
+      CREATE TABLE IF NOT EXISTS ewgenius.spiceapp1.runtime_metrics (
+        timestamp TIMESTAMP,
+        name TEXT,
+        value FLOAT,
+        labels TEXT
+      );
